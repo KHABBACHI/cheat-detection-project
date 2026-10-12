@@ -1,0 +1,22 @@
+{
+  "regle": "E* = epoque minimisant la BCE hors-fold moyenne (folds x graines) ; seuil = maximise l'exactitude equilibree hors-fold a E*. Variante sans_regul : E* = epoques_max (pas de choix d'epoque).",
+  "epoques": 3,
+  "seuil": 0.44,
+  "bce_oof_par_epoque": [
+    0.44238,
+    0.41386,
+    0.39537,
+    0.4162,
+    0.40921,
+    0.44377,
+    0.45246,
+    0.46738,
+    0.4786,
+    0.5,
+    0.52617,
+    0.53217,
+    0.54105,
+    0.54398,
+    0.54555
+  ]
+}

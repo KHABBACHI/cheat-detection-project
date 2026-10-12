@@ -1,0 +1,36 @@
+{
+  "variante": "transformer",
+  "config_fenetres": "c5_L48",
+  "graines": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "hyperparametres": {
+    "d_model": 256,
+    "n_tetes": 4,
+    "n_couches": 2,
+    "ff": 512,
+    "dropout": 0.3,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "batch": 64,
+    "epoques_max": 15,
+    "clip": 1.0,
+    "scheduler": true,
+    "choix_epoque": true,
+    "archi": "transformer"
+  },
+  "etiquette_fenetre": "majorite des crops (>= 50 % triche)",
+  "source_etiquettes": "yolo_pseudo",
+  "scaler": "StandardScaler ajuste sur les etudiants d'entrainement de chaque fold ; modele final : sur les 12 etudiants dev",
+  "dinov2": "gele",
+  "python": "3.11.5",
+  "torch": "2.5.1+cpu",
+  "cpu": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel",
+  "threads": 2,
+  "gpu": "aucun",
+  "duree_min": 50.5
+}
