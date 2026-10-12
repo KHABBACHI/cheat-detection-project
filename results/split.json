@@ -1,0 +1,163 @@
+{
+  "cree_le": "2026-10-08T22:23:21",
+  "graine": 42,
+  "unite_de_split": "etudiant (= video webcam OEP = session)",
+  "split_fait_avant_les_fenetres": true,
+  "fps_echantillonnage_crops": 5,
+  "source_des_etiquettes": "yolo_pseudo - A REVOIR (correction 2)",
+  "test_final": [
+    "Muath1",
+    "XiYin1",
+    "zach1"
+  ],
+  "test_final_exclu_entrainement_yolov5": true,
+  "dev": [
+    "Jourabloo1",
+    "alhashe31",
+    "bajajpak1",
+    "chenlipi1",
+    "chuangy61",
+    "dhingra51",
+    "guolingh1",
+    "huangpi21",
+    "husseinhijazi1",
+    "makiluke1",
+    "meowseph1",
+    "vaibhav1"
+  ],
+  "folds_validation_croisee": [
+    [
+      "chuangy61",
+      "huangpi21",
+      "makiluke1"
+    ],
+    [
+      "Jourabloo1",
+      "dhingra51",
+      "guolingh1"
+    ],
+    [
+      "alhashe31",
+      "bajajpak1",
+      "vaibhav1"
+    ],
+    [
+      "chenlipi1",
+      "husseinhijazi1",
+      "meowseph1"
+    ]
+  ],
+  "regles": [
+    "Le TEST n'est utilise qu'une seule fois, a la fin, apres avoir fige architecture, hyperparametres, checkpoint et seuil.",
+    "Tous ces choix se font par validation croisee sur 'dev' uniquement.",
+    "StandardScaler et autres normalisations : ajustes sur les etudiants d'entrainement de chaque fold uniquement.",
+    "Les fenetres sont construites a l'interieur de chaque etudiant, apres le split."
+  ],
+  "stats_par_etudiant": {
+    "alhashe31": {
+      "images": 5273,
+      "crops": 4921,
+      "triche": 3404,
+      "normal": 1517,
+      "taux_triche": 0.692
+    },
+    "bajajpak1": {
+      "images": 5807,
+      "crops": 5092,
+      "triche": 2831,
+      "normal": 2261,
+      "taux_triche": 0.556
+    },
+    "chenlipi1": {
+      "images": 5302,
+      "crops": 5211,
+      "triche": 326,
+      "normal": 4885,
+      "taux_triche": 0.063
+    },
+    "chuangy61": {
+      "images": 3683,
+      "crops": 3446,
+      "triche": 810,
+      "normal": 2636,
+      "taux_triche": 0.235
+    },
+    "dhingra51": {
+      "images": 4712,
+      "crops": 4184,
+      "triche": 2391,
+      "normal": 1793,
+      "taux_triche": 0.571
+    },
+    "guolingh1": {
+      "images": 7287,
+      "crops": 7229,
+      "triche": 5336,
+      "normal": 1893,
+      "taux_triche": 0.738
+    },
+    "huangpi21": {
+      "images": 7688,
+      "crops": 6086,
+      "triche": 2288,
+      "normal": 3798,
+      "taux_triche": 0.376
+    },
+    "husseinhijazi1": {
+      "images": 5490,
+      "crops": 5459,
+      "triche": 2021,
+      "normal": 3438,
+      "taux_triche": 0.37
+    },
+    "Jourabloo1": {
+      "images": 4802,
+      "crops": 4800,
+      "triche": 771,
+      "normal": 4029,
+      "taux_triche": 0.161
+    },
+    "makiluke1": {
+      "images": 6828,
+      "crops": 6815,
+      "triche": 4202,
+      "normal": 2613,
+      "taux_triche": 0.617
+    },
+    "meowseph1": {
+      "images": 4397,
+      "crops": 4397,
+      "triche": 1980,
+      "normal": 2417,
+      "taux_triche": 0.45
+    },
+    "Muath1": {
+      "images": 4283,
+      "crops": 4264,
+      "triche": 1024,
+      "normal": 3240,
+      "taux_triche": 0.24
+    },
+    "vaibhav1": {
+      "images": 5575,
+      "crops": 5550,
+      "triche": 752,
+      "normal": 4798,
+      "taux_triche": 0.135
+    },
+    "XiYin1": {
+      "images": 4602,
+      "crops": 4571,
+      "triche": 1020,
+      "normal": 3551,
+      "taux_triche": 0.223
+    },
+    "zach1": {
+      "images": 4718,
+      "crops": 4716,
+      "triche": 3506,
+      "normal": 1210,
+      "taux_triche": 0.743
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "config": "c5_L16",
+  "cadence_img_s": 5,
+  "fenetre_crops": 16,
+  "duree_fenetre_s": 3.2,
+  "pas_transformer_images": 8,
+  "nouvelle_fenetre_toutes_les_s": 1.6,
+  "video": "zach1",
+  "images_mesurees": 880,
+  "images_echauffement_exclues": 20,
+  "execution": "sequentielle, une image a la fois (batch 1), sans recouvrement entre etapes",
+  "budget_par_image_ms": 200.0,
+  "latence_par_etape": {
+    "lecture": {
+      "moyenne_ms": 5.0,
+      "ecart_type_ms": 3.3,
+      "mediane_ms": 3.7,
+      "p95_ms": 11.8
+    },
+    "yolo": {
+      "moyenne_ms": 437.5,
+      "ecart_type_ms": 72.9,
+      "mediane_ms": 426.2,
+      "p95_ms": 528.6
+    },
+    "pretraitement": {
+      "moyenne_ms": 6.4,
+      "ecart_type_ms": 1.7,
+      "mediane_ms": 6.2,
+      "p95_ms": 9.2
+    },
+    "dinov2": {
+      "moyenne_ms": 974.5,
+      "ecart_type_ms": 135.5,
+      "mediane_ms": 952.2,
+      "p95_ms": 1136.3
+    },
+    "total": {
+      "moyenne_ms": 1424.2,
+      "ecart_type_ms": 188.5,
+      "mediane_ms": 1393.7,
+      "p95_ms": 1665.4
+    }
+  },
+  "latence_transformer_plus_alerte_par_fenetre": {
+    "moyenne_ms": 5.8,
+    "ecart_type_ms": 13.4,
+    "mediane_ms": 4.2,
+    "p95_ms": 8.2
+  },
+  "debit_soutenu_img_s": 0.7,
+  "facteur_temps_reel": 0.14,
+  "temps_reel": false,
+  "part_images_au_dessus_du_budget": 1.0,
+  "alertes_emises": 96,
+  "materiel": {
+    "os": "Windows-10-10.0.22621-SP0",
+    "processeur": "Intel64 Family 6 Model 142 Stepping 9, GenuineIntel",
+    "coeurs_logiques": 4,
+    "threads_torch": 2,
+    "python": "3.11.5",
+    "torch": "2.5.1+cpu",
+    "opencv": "4.10.0",
+    "appareil": "cpu",
+    "gpu": "aucun",
+    "ram_go": 8.5
+  }
+}

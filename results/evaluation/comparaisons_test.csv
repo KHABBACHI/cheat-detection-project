@@ -1,0 +1,6 @@
+﻿config;comparaison;diff_bal_acc;ic95_diff;mcnemar_p_median;mcnemar_graines_p_inf_005;ic_exclut_zero
+c5_L16;transformer vs gru;0.0014;"[-0.005 ; 0.007]";0.3915;0/5;non
+c5_L16;transformer vs lstm;0.0037;"[-0.004 ; 0.011]";0.4096;2/5;non
+c5_L16;transformer vs moyenne;-0.0132;"[-0.024 ; -0.003]";0.3742;2/5;oui
+c5_L16;transformer vs transformer_sans_dropout;-0.0007;"[-0.005 ; 0.003]";0.3771;1/5;non
+c5_L16;transformer vs transformer_sans_regul;-0.0018;"[-0.009 ; 0.006]";0.0821;1/5;non

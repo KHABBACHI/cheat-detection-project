@@ -1,0 +1,11 @@
+modele=dinov2_vitb14
+gele=oui (aucun fine-tuning)
+sortie=token CLS
+pretraitement=Resize(224x224) + normalisation ImageNet
+normalisation_StandardScaler=non (faite par fold, sur le train uniquement)
+batch=32
+python=3.11.5
+torch=2.5.1+cpu
+cpu=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+threads=2
+cuda=False

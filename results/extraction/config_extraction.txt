@@ -1,0 +1,10 @@
+poids=best.pt
+img_size=640
+conf=0.25
+marge=0.0
+fps_echantillonnage=5
+regle=1 detection par image (la plus confiante)
+python=3.11.5
+torch=2.5.1+cpu
+cpu=Intel64 Family 6 Model 142 Stepping 9, GenuineIntel
+cuda=False

@@ -1,0 +1,68 @@
+{
+  "config": "c1_L8",
+  "cadence_img_s": 1,
+  "fenetre_crops": 8,
+  "duree_fenetre_s": 8.0,
+  "pas_transformer_images": 4,
+  "nouvelle_fenetre_toutes_les_s": 4.0,
+  "video": "zach1",
+  "images_mesurees": 160,
+  "images_echauffement_exclues": 20,
+  "execution": "sequentielle, une image a la fois (batch 1), sans recouvrement entre etapes",
+  "budget_par_image_ms": 1000.0,
+  "latence_par_etape": {
+    "lecture": {
+      "moyenne_ms": 14.6,
+      "ecart_type_ms": 3.8,
+      "mediane_ms": 12.7,
+      "p95_ms": 20.6
+    },
+    "yolo": {
+      "moyenne_ms": 14.1,
+      "ecart_type_ms": 3.2,
+      "mediane_ms": 12.1,
+      "p95_ms": 19.6
+    },
+    "pretraitement": {
+      "moyenne_ms": 4.3,
+      "ecart_type_ms": 1.1,
+      "mediane_ms": 3.6,
+      "p95_ms": 5.9
+    },
+    "dinov2": {
+      "moyenne_ms": 15.0,
+      "ecart_type_ms": 0.4,
+      "mediane_ms": 14.9,
+      "p95_ms": 15.6
+    },
+    "total": {
+      "moyenne_ms": 48.3,
+      "ecart_type_ms": 7.8,
+      "mediane_ms": 43.6,
+      "p95_ms": 60.4
+    }
+  },
+  "latence_transformer_plus_alerte_par_fenetre": {
+    "moyenne_ms": 1.3,
+    "ecart_type_ms": 0.2,
+    "mediane_ms": 1.2,
+    "p95_ms": 1.7
+  },
+  "debit_soutenu_img_s": 20.69,
+  "facteur_temps_reel": 20.69,
+  "temps_reel": true,
+  "part_images_au_dessus_du_budget": 0.0,
+  "alertes_emises": 41,
+  "materiel": {
+    "os": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "processeur": "x86_64",
+    "coeurs_logiques": 2,
+    "threads_torch": 1,
+    "python": "3.13.15",
+    "torch": "2.11.0+cu130",
+    "opencv": "4.14.0",
+    "appareil": "cuda",
+    "gpu": "Tesla T4",
+    "ram_go": 13.6
+  }
+}
